@@ -36,12 +36,12 @@ function calcTrans(start, end, mode) {
     let res = '';
     if (mode <= 1/3) {
         for(let i=0;i<start.length;i++) {
-            res += Math.random() < mode*3 ? chooseTransMid() : start[i];
+            res += Math.random() < (mode*3)**2 ? chooseTransMid() : start[i];
         }
     }
     if (mode >= 2/3) {
         for(let i=0;i<end.length;i++) {
-            res += Math.random() < (3 - mode*3) ? chooseTransMid() : end[i];
+            res += Math.random() < (3 - mode*3)**2 ? chooseTransMid() : end[i];
         }
     }
     return res;

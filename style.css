@@ -1,5 +1,6 @@
 body, p, span, a {
   font-family: 'Consolas', monospace;
+  font-size: 16px;
 }
 
 body {
@@ -10,4 +11,13 @@ h1 {
   color: white;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+#noscript-highlight {
+  font-size: 20px;
+  text-shadow: 2px 2px 1px blueviolet;
 }

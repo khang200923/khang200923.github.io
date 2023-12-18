@@ -70,4 +70,8 @@ async function coolTransition() {
     }, 33);
 }
 
-coolTransition();
+//Mains
+document.addEventListener("DOMContentLoaded", function() {
+    coolTransition();
+    document.getElementById("main").classList.remove("hidden");
+});

@@ -1,5 +1,5 @@
 body, p, span, a, button {
-    font-family: monospace;
+    font-family: "Consolas", monospace;
     font-size: 20px;
     color: white;
 }

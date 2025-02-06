@@ -49,6 +49,5 @@ async function coolTransition() {
     }, 33);
 }
 
-//Mains
 coolTransition();
 document.getElementById("main").classList.remove("hidden");

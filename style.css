@@ -1,10 +1,11 @@
 body, p, span, a, button {
-    font-family: 'Consolas', monospace;
+    font-family: monospace;
     font-size: 20px;
+    color: white;
 }
 
 body {
-    background-color: lightblue;
+    background-color: black;
 }
 
 .hidden {
@@ -17,26 +18,26 @@ body {
 }
 
 .box {
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 30px;
     margin: 10px;
 }
 
-button {
-    border: 2px solid black;
+button, a {
+    border: 2px solid white;
     border-radius: 5px;
     background-color: transparent;
     cursor: pointer;
 }
 
-button.cool-button {
-    color: black;
+button.cool1-btn, a.cool1-btn {
     transition-duration: 0.3s;
     transition-timing-function: ease-in;
+    box-shadow: 0px 0px 1px cyan;
 }
 
-button.cool-button:hover {
-    box-shadow: -4px 4px 1px darkgreen;
+button.cool1-btn:hover, a.cool1-btn:hover {
+    box-shadow: -4px 4px 1px cyan;
     transform: translate(4px, -4px);
-    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: cubic-bezier(.2,1.17,.16,1.51);
 }
